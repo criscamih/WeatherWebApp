@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WeatherApp</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="header"><h1>WeatherWorld!</h1></div>
+		<div class="item" id="contenido">
+			<div class="loader">Geolocalizando...</div>
+			<br>
+			<form action="" class="search">
+				<input type="text" class="search-city" data-input="cityAdd" placeholder="Ingresa Ciudad"/>
+				<input type="submit" data-button="add" class="search-btn" value="Add"/>
+				<button data-record-cities class="search-btn" >Ver</button>
+			</form>
+			<br>
+			<main class="card-group">
+				<template id="template--city">
+					<div class="card">
+						<div id="contenido-imagen">
+							<img data-icon src="" alt="icono" />
+							<span data-temp="current" id="temp-current"></span> 
+							<span data-temp="max" id="temp-max"></span>
+							<span data-temp="min" id="temp-min"></span>
+						</div>
+						<div class="tiempo">	
+							<h3 data-city id="zona"></h3>
+							<div class="contenido-time">
+								<span data-time id="horario"></span>
+							</div>
+						</div>
+						
+					</div>
+				</template>
+			</main>
+			
+			 
+		</div>
+		<div class="item" id="footer"><p>Creado por:<br/> &copy <span>Cristian Sosa</span> </p></div>
+	</div>
+
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
