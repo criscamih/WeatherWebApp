@@ -2,10 +2,19 @@
 	display: grid;
 	grid-template-rows: 80px 1fr 100px;
 	grid-gap: 5px;
+	max-width: 1000px;
+	margin:0 auto;
 }
-.item{
-	
+@media screen AND (max-width: 768px){
+	h3#zona{
+	font-size:25px;
+	}
+	span#horario{
+	font-size:25px;	
+	}
 }
+
+
 #contenido{
 	min-height: 100vh;
 }
@@ -58,7 +67,7 @@ img{
 
 
 #temp-current{
-	font-size:35px;
+	font-size:40px;
 }
 
 #temp-max{
@@ -79,7 +88,7 @@ img{
 }
 
 #zona{
-	font-size:28px;
+	font-size:35px;
 	font-weight: bold;
 }
 .tiempo{
