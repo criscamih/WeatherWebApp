@@ -2,9 +2,9 @@
 	
 	const API_KEY_WEATHER="4bf441c39bebf932933d20904fea2cb2"
 	const API_KEY_TIME='7f88235bd2874cc6bf6231540182205'
-	const API_URL_WEATHER="http://api.openweathermap.org/data/2.5/weather?appid="+API_KEY_WEATHER+"&";
-	const API_URL_TIME="http://api.worldweatheronline.com/premium/v1/tz.ashx?format=json&key="+API_KEY_TIME+"&q=";
-	const IMG_WEATHER="http://openweathermap.org/img/w/"
+	const API_URL_WEATHER="https://api.openweathermap.org/data/2.5/weather?appid="+API_KEY_WEATHER+"&";
+	const API_URL_TIME="https://api.worldweatheronline.com/premium/v1/tz.ashx?format=json&key="+API_KEY_TIME+"&q=";
+	const IMG_WEATHER="https://openweathermap.org/img/w/"
 	var cityWeather={}
 	cityWeather.zone
 	cityWeather.icon
